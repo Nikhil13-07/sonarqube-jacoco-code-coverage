@@ -3,5 +3,11 @@ node{
 		
 		git 'https://github.com/Nikhil13-07/sonarqube-jacoco-code-coverage'
 	}
+	stage('clean install'){	
+	def mvnHome= tool name: 'maven-3',type: 'maven'
+	sh"{mvnHome}/bin/mvn clean install"
+			
+	}
+	
 
 }
