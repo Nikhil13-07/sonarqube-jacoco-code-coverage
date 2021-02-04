@@ -1,0 +1,7 @@
+node{
+	stage('SCM checkout'){
+		
+		git 'https://github.com/Nikhil13-07/sonarqube-jacoco-code-coverage'
+	}
+
+}
