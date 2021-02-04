@@ -8,9 +8,8 @@ node{
 			
 	}
 	stage('Sonar qube analysis'){	
-	
-	sh"mvn sonar:sonar"	
-		
+	withSonarQubeEnv('Sonar Setup'){
+	sh"mvn sonar:sonar"	}
 	}
 	
 
