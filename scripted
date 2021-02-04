@@ -7,6 +7,11 @@ node{
 	sh"mvn clean install"
 			
 	}
+	stage('Sonar qube analysis'){	
+	
+	sh"mvn sonar:sonar"	
+		
+	}
 	
 
 }
